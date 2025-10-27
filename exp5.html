@@ -6,18 +6,18 @@
 <body>
     <h1 style="text-align: center;">Student Registration Form</h1>
     <hr>
-    <form>
+    <form method="post" action="/submit_registration">
         <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name"><br><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter valid email address"><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter valid email address" required><br><br>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
 
         <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male">
+        <input type="radio" id="male" name="gender" value="male" required>
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female">
         <label for="female">Female</label>
@@ -25,7 +25,7 @@
         <label for="other">Other</label><br><br>
 
         <label for="course">Course:</label>
-        <select id="course" name="course">
+        <select id="course" name="course" required>
             <option value="">-- Select Course --</option>
             <option value="bca">BCA</option>
             <option value="bsc">B.Sc</option>
@@ -34,10 +34,10 @@
         </select><br><br>
 
         <label for="contact">Contact No:</label>
-        <input type="text" id="contact" name="contact" placeholder="Enter phone number"><br><br>
+        <input type="text" id="contact" name="contact" placeholder="Enter phone number" required><br><br>
 
         <label for="address">Address:</label><br>
-        <textarea id="address" name="address" placeholder="Enter your address" rows="3" cols="40"></textarea><br><br>
+        <textarea id="address" name="address" placeholder="Enter your address" rows="3" cols="40" required></textarea><br><br>
 
         <input type="submit" value="Register">
         <input type="reset" value="Clear">
@@ -47,4 +47,3 @@
     <div style="text-align: center;">&copy; 2025 Student Registration Portal</div>
 </body>
 </html>
-
